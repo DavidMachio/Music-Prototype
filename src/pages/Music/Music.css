@@ -17,10 +17,8 @@
 .containerMusic{
     
     /* border: 2px solid rgb(0, 255, 30); */
-    /* border: 2px solid rgb(0, 255, 60); */
-    overflow: scroll;
     width: 100%;
-    max-height:100svh;
+    min-height:100svh;
     display: flex;
     flex-direction: column;
     gap: var(--gap-m);
@@ -28,9 +26,6 @@
     position: relative;
     padding-top: 100px;
 
-}
-.containerMusic::-webkit-scrollbar{
-    display: none;
 }
 
 .albums {
@@ -146,14 +141,17 @@
     .mainmusic{
         flex-direction: column;
         align-items: center;
+
     }
     .containerMusic {
-
+        overflow: none;
+        min-height: auto;
         padding-right: var(--padding-m);
     }
     .containerMusic {
         padding-top: 100px;
     }
+    
     
 }
 
