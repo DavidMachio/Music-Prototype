@@ -1,0 +1,29 @@
+.portada {
+    height: 370px;
+    width: 100%;
+    background-color: var(--bg-200);
+    border-radius: 20px;
+    position: relative;
+    
+}
+.coverPortada {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.titulo {
+    position: absolute;
+    bottom: 30px;
+    left: var(--padding-m);
+    font-size: 60px;
+    text-shadow: 0 0 20px black;
+}
+.numeroCanciones {
+    position: absolute;
+    bottom: 10px;
+    left: var(--padding-m);
+    text-shadow: 0 0 20px black;
+
+
+}

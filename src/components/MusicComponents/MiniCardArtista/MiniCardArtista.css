@@ -1,0 +1,9 @@
+.vermas {
+    width: 60px;
+    height: 30px;
+    padding: var(--padding-xs);
+    border: 1px solid var(--primary-300);
+    border-radius: 15px;
+    color: var(--primary-300);
+    background-color: transparent;
+}

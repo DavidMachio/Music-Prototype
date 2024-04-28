@@ -1,0 +1,112 @@
+.contenedorReproduciendo {
+    max-height:calc(100svh - 80px);
+    min-width: 390px;
+    padding: var(--padding-m) var(--padding-m) var(--padding-m) 0;
+    min-height: 100svh;
+    overflow: scroll;
+    padding-top: 100px;
+
+
+}
+.contenedorReproduciendo::-webkit-scrollbar{
+    display: none;
+}
+
+.reproduciendo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-s);
+    width: 370px;
+    height: auto;
+    /* padding: var(--padding-s); */
+    border-radius: 20px;
+    background-color: var(--bg-200);
+    padding-bottom: var(--padding-m);
+    overflow-x: scroll;
+
+}
+.reproduciendo::-webkit-scrollbar{
+    display: none;
+}
+.coverplay {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 20px var(--bg-100);
+
+}
+
+
+.containergroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+.contenedorInfo {
+    height: auto;
+    width: 100%;
+}
+.masinfo {
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    color: var(--primary-200);
+    border: 1px solid var(--primary-200);
+    border-radius: 5px;
+    margin: auto;
+    
+}
+.artistasContainer {
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-s);
+    overflow: hidden;
+    transition: all .3s;
+}
+.visible {
+    height: 140px;
+}
+.divArtista {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-m);
+    padding: var(--padding-s);
+}
+
+.fotoArtista {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px var(--bg-100);
+}
+.titlereproduciendo {
+    font-weight: 400;
+    padding: 0 var(--padding-s);
+
+}
+
+
+.vso {
+    font-weight: 100;
+    color: var(--primary-300);
+    padding: 0 var(--padding-s);
+}
+
+@media (max-width:950px){
+    .contenedorReproduciendo{
+        padding: 0 0 var(--padding-m) 0;
+        min-width: 200px;
+        width: 300px;
+
+    }
+    .reproduciendo{
+        padding: 0px;
+        width: 100%;
+    }
+}

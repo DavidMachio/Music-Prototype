@@ -1,0 +1,165 @@
+.mainmusic {
+    width: auto;
+    min-height:calc(100svh - 80px);
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap-m);
+    
+
+    
+}
+.portadaPortada {
+    height: 300px;
+    width: 100%;
+    background-color: var(--bg-200);
+    border-radius: 20px;
+}
+.containerMusic{
+    
+    /* border: 2px solid rgb(0, 255, 30); */
+    /* border: 2px solid rgb(0, 255, 60); */
+    overflow: scroll;
+    width: 100%;
+    max-height:100svh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-m);
+    padding: var(--padding-m) 0 var(--padding-m) var(--padding-m);
+    position: relative;
+    padding-top: 100px;
+
+}
+.containerMusic::-webkit-scrollbar{
+    display: none;
+}
+
+.albums {
+    border-radius: 20px;
+    min-height: 180px;
+    width: 100%;
+    background-color: var(--bg-200);
+    display: flex;
+    align-items: center;
+    gap: var(--gap-m);
+    padding: var(--padding-m);
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.albums::-webkit-scrollbar{
+    display: none;
+}
+.disco {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-xs);
+    
+}
+.portadadisco {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--bg-100);
+    transition: all .2s;
+}
+.portadadisco:hover {
+    scale: 105%;
+}
+.titulodisco {
+    font-size: 14px;
+}
+
+
+
+/* canciones */
+.canciones {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-s);
+    min-height: auto;
+    width: 100%;
+    padding: 0 0 var(--padding-m) 20;
+
+    
+}
+
+.containerCancion {
+    position: relative;
+    background-color: var(--bg-200);
+    border-radius: 10px;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: var(--padding-s)var(--padding-m);
+    gap: var(--gap-m);
+}
+
+.containerCancion:hover {
+    background-color: var(--bg-300);
+    cursor: pointer;
+}
+.portadaCancion {
+    height: 90%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    transition: all 0.3s;
+    filter: contrast(80%);
+
+
+}
+.portadaCancion:hover {
+    scale: 110%;
+    filter: contrast(110%);
+}
+
+
+.tituloCancion {
+    font-size: 14px;
+    width: 100%;
+    font-weight: 200;
+}
+.duration {
+    width: 100%;
+    font-weight: 200;
+    text-align: right;
+}
+.play {
+    align-self: center;
+    height: auto;
+    width: auto;
+    opacity: 0;
+
+}
+.playing {
+    opacity: 1;
+    /* animation: changeheight .2s ease-in-out infinite alternate; */
+}
+
+/* Reproduciendo */
+
+@media (max-width:950px){
+    .mainmusic{
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerMusic {
+
+        padding-right: var(--padding-m);
+    }
+    .containerMusic {
+        padding-top: 100px;
+    }
+    
+}
+
+
+
+
+
+
+
