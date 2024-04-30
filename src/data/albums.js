@@ -2,7 +2,7 @@ export const albums = [
   {
     title: "Quiet Time",
     cover:
-      "https://images.unsplash.com/photo-1501426026826-31c667bdf23d?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://i.swncdn.com/media/700w/via/20197-popular-hymns-gtjpeg.jpg",
     songs: [
       {
         title: "Antonio´s song",

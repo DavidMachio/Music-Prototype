@@ -53,3 +53,26 @@ li {
 #app {
   min-height: 100svh;
 }
+
+
+
+img {
+  animation: opacityimgs .4s ease-in-out;
+}
+
+
+@keyframes opacityimgs{
+  0%{
+    opacity: 0;
+    scale:102%;
+    filter: blur(10);
+  }
+  90% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    scale: 100%;
+    filter: blur(0);
+  }
+}
